@@ -1,4 +1,4 @@
-produto1 = float(input("Vamos sobrar 3 produtos e mostrar o resultado com 10 por cento de desconto! Informe o valor do produto 1: "))
+produto1 = float(input("Vamos somar 3 produtos e mostrar o resultado com 10 por cento de desconto! Informe o valor do produto 1: "))
 produto2 = float(input("Informe o valor do produto 2: "))
 produto3 = float(input("Informe o valo do produto 3: "))
 
