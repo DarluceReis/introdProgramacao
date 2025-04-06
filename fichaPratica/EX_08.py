@@ -1,16 +1,21 @@
-faixa1_min, faixa1_seg = 5, 45
-faixa2_min, faixa2_seg = 3, 49
-faixa3_min, faixa3_seg = 2, 59
-faixa4_min, faixa4_seg = 3, 50
-faixa5_min, faixa5_seg = 2, 40
+# iniciando a variável
+total_segundos = 0
 
-total_minutos = faixa1_min + faixa2_min + faixa3_min + faixa4_min + faixa5_min
-total_segundos = faixa1_seg + faixa2_seg + faixa3_seg + faixa4_seg + faixa5_seg
+# repetir o laço 5 vezes, 1 pra cada msc
+for i in range(5):
+    print(f"Música {i + 1}:")
+    
+# Pegando os minutos e segundos da música
+    min = int(input(" Digite os minutos: "))
+    seg = int(input("  Digite os segundos: "))
 
-total_minutos += total_segundos // 60 
-total_segundos = total_segundos % 60 
+# Transformamos tudo em segundos e somamos ao total
+    total_segundos += min * 60 + seg
 
-horas = total_minutos // 60
-minutos = total_minutos % 60
+# converter os segundos totais para horas, minutos e segundos
+horas = total_segundos // 3600
+minutos = (total_segundos % 3600) // 60
+segundos = total_segundos % 60
 
-print(f"Duração total: {horas}h {minutos}m {total_segundos}s")
+# Mostramos o resultado formatado bonitinho
+print(f"\nDuração total do álbum: {horas:02d}:{minutos:02d}:{segundos:02d}")
