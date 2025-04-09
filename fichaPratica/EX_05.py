@@ -3,7 +3,7 @@ numero2 = float(input("Digite o segundo número: "))
 numero3 = float(input("Digite o terceiro número: "))
 
 mediaA= (numero1 + numero2 + numero3) / 3
-mediaP= ((numero1 * 0.20) + (numero2 * 0.30) + (numero3 * 0.50) / (0.20 + 0.30 + 0.50))
+mediaP= ((numero1 * 0.20) + (numero2 * 0.30) + (numero3 * 0.50))
         
 
 print("A média aritmética é: ", mediaA)
