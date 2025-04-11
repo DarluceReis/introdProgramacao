@@ -1,12 +1,11 @@
+#pedir o numero ao usuario
 numero = int(input("Digite um número: "))
-#pra fazer a primeira continha
-temporario = -5
+contador = 0
+numeroMenor = numero - 5
 
-#basicamente, enquanto -5 for maior que -5 (ou seja, sempre) e -5 for menor que 5 ou seja somar mais 1 até dar 5
-while temporario >= -5 and temporario <= 5:
-# não aparecer o número que foi inserido pelo usuário
-    if temporario != 0:
-#printar o numero mais -5 -4 -3 -2...
-        print(numero + temporario)
-#incrementar 1 a cada vez que rodar o laço
-    temporario += 1
+#subtrair 5 e mostrar 1 a 1 e somar 5 e mostrar 1 a 1
+while contador <= 10:
+    if numeroMenor != numero:
+        print(numeroMenor)
+    numeroMenor += 1
+    contador += 1
