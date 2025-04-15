@@ -1,4 +1,4 @@
-numero = int(input("Digite um número maior que 2 e diremos se ele é par: "))
+numero = int(input("Informe um número: "))
 pares = 0
 
 if numero <= 2:
@@ -7,9 +7,13 @@ if numero <= 2:
 else:
 
     while pares != numero and numero > 2:
-        if pares % 2 == 0:
+        if pares % 2 == 0 and pares != 0:
             print (pares)
         pares += 1
 
-print(f"O número digitado foi: {numero}")
+if numero % 2 == 0:
+    print(f"O número digitado foi: {numero} e é par!")
+
+else:
+    print(f"O número digitado foi: {numero} e é impar")
 

@@ -4,10 +4,9 @@ salto = float(input("Informe o número que define o salto: "))
 incremento = 0
 
 #quero fazer salto + salto + salto ... até o limite
-while salto < limite:
-    if incremento < limite:
+while salto <= limite:
+    if incremento <= limite:
         print(incremento)
-        print("a")
-    incremento += salto
-    print(salto)
+        incremento += salto
+
 
